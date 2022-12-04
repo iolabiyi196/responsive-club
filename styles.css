@@ -1,0 +1,74 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightsalmon;
+	font-family: Montserrat, sans-serif;
+}
+
+header,
+footer {
+	background-color: teal;
+	height: 45px;
+	padding: 1.6rem 0px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+ul {
+	margin-left: 2rem;
+}
+
+.navs {
+	display: inline;
+	padding: 0px 25px;
+	color: lightsalmon;
+}
+
+div.banner {
+	padding: 15% 0;
+}
+
+#club-name {
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 3rem;
+    font-size: 2em;
+	color: lightsalmon;
+	background-color: rgba(107, 31, 31, 0.7);
+}
+
+.summary {
+	padding: 0px 15px;
+	margin: 55px 0;
+}
+
+.what-you-do {
+	margin: 20px 0;
+	color: yellow;
+}
+
+.white {
+	color: white;
+	margin: 0.6em 0;
+}
+
+span {
+	color: blue;
+	text-decoration: underline;
+}
+
+div.images {
+    display: flex;
+    justify-content: space-between;
+}
+div.images img {
+    width: 31%;
+    margin: 3rem 0;
+}
