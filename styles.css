@@ -39,12 +39,13 @@ div.banner {
 	text-align: center;
 	padding: 1em;
 	margin-bottom: 3rem;
-    font-size: 2em;
+	font-size: 2em;
 	color: lightsalmon;
 	background-color: rgba(107, 31, 31, 0.7);
 }
 
-.summary {
+.summary,
+.second-images {
 	padding: 0px 15px;
 	margin: 55px 0;
 }
@@ -64,11 +65,44 @@ span {
 	text-decoration: underline;
 }
 
-div.images {
-    display: flex;
-    justify-content: space-between;
+.images,
+.second-images {
+	display: flex;
+	justify-content: space-between;
 }
-div.images img {
-    width: 31%;
-    margin: 3rem 0;
+
+.images img,
+.second-images img {
+	width: 31%;
+	margin: 3rem 0 2rem 0;
+}
+
+.testimonial {
+	color: yellow;
+	background-color: teal;
+	padding: 0 20px;
+	height: 18rem;
+}
+
+.testimonial h1 {
+	padding: 30px 0;
+}
+
+.meetup {
+	width: 70%;
+	margin:1.5rem auto;
+	align-content: center;
+}
+
+.meetup img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin:  25px auto;
+}
+
+.meetup h2 {
+	color: yellow;
+	font-size: 1.75rem;
+	text-align: center;
 }
