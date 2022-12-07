@@ -9,11 +9,10 @@ body {
 	font-family: Montserrat, sans-serif;
 }
 
-header,
-footer {
+.bar {
 	background-color: teal;
-	height: 45px;
-	padding: 1.6rem 0px;
+	/* height: 45px; */
+	padding: 1.5rem 0px;
 }
 
 a,
@@ -45,7 +44,7 @@ div.banner {
 }
 
 .summary,
-.second-images {
+.images {
 	padding: 0px 15px;
 	margin: 55px 0;
 }
@@ -65,16 +64,14 @@ span {
 	text-decoration: underline;
 }
 
-.images,
-.second-images {
-	display: flex;
-	justify-content: space-between;
+.images {
+	display: block;
+	width: 100%;
 }
 
-.images img,
-.second-images img {
+.images img {
 	width: 31%;
-	margin: 3rem 0 2rem 0;
+	margin: 1%;
 }
 
 .testimonial {
@@ -90,19 +87,64 @@ span {
 
 .meetup {
 	width: 70%;
-	margin:1.5rem auto;
+	margin: 1.5rem auto;
 	align-content: center;
 }
 
 .meetup img {
-    width: 70%;
-    height: auto;
-    display: block;
-    margin:  25px auto;
+	width: 70%;
+	height: auto;
+	display: block;
+	margin: 25px auto;
 }
 
 .meetup h2 {
 	color: yellow;
 	font-size: 1.75rem;
 	text-align: center;
+}
+
+@media only screen and (max-width: 1048px) {
+	.images {
+		padding: 0;
+	}
+
+	.images img {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.bar {
+		padding: 10px;
+	}
+
+	.navs {
+		display: block;
+		text-align: center;
+		margin: 5px 0;
+	}
+
+	.banner {
+		max-height: 200px;
+	}
+
+	.banner h1 {
+		margin-top: 2rem;
+	}
+
+	.images {
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.testimonial h1 {
+		font-size: 2rem;
+	}
 }
